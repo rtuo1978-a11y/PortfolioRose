@@ -67,82 +67,119 @@
           <li><strong>2</strong> prix pour mes projets</li>
           <li><strong>8 mois</strong> en startup, chez Frony</li>
           <li><strong>3 ans</strong> déléguée de classe</li>
+          <li><strong>Finaliste</strong> Miss CI Informatique 2026</li>
         </ul>
       </div>
     </section>
 
     <!-- PROJETS -->
     <section class="projects" id="projets" aria-labelledby="projets-title">
-      <div class="section-head">
+      <div class="projects-intro">
         <h2 id="projets-title">Mes projets, cousus main</h2>
-        <p class="section-note">Comme un pagne n'zassa, chaque pièce vient d'une histoire différente. Ensemble, elles racontent ce que je sais faire.</p>
+        <p class="section-note">Comme un pagne n'zassa, chaque pièce vient d'une histoire différente&nbsp;: une rue inondée, un marché, un banquet, une salle de classe. Ensemble, elles racontent ce que je sais faire et pour qui je le fais.</p>
       </div>
 
-      <div class="filters" role="group" aria-label="Filtrer les projets">
-        <button type="button" class="filter is-on" data-filter="all" aria-pressed="true">Tout</button>
-        <button type="button" class="filter" data-filter="mobile" aria-pressed="false">Mobile</button>
-        <button type="button" class="filter" data-filter="web" aria-pressed="false">Web</button>
-        <button type="button" class="filter" data-filter="equipe" aria-pressed="false">En équipe</button>
-        <button type="button" class="filter" data-filter="prix" aria-pressed="false">Primés</button>
-      </div>
-
-      <div class="quilt" id="quilt">
-        <article class="patch p-big p-rose" data-tags="mobile equipe">
+      <!-- Featured: FlowManage -->
+      <article class="feature f-rose">
+        <div class="feature-text">
           <p class="patch-meta">Projet d'équipe APP3 · ESATIC · 2026</p>
           <h3>FlowManage</h3>
-          <p>Une application mobile pour prévenir et gérer les risques d'inondation en Côte d'Ivoire&nbsp;: alertes, cartographie des zones à risque et aide à la décision.</p>
+          <p class="feature-lead">Une application mobile pour prévenir et gérer les risques d'inondation en Côte d'Ivoire.</p>
+          <p>Les habitants signalent une inondation avec une photo et leur position, consultent la carte des zones à risque, reçoivent des alertes écrites et vocales et peuvent déclencher un SOS. Les autorités et les secours ont leur propre espace pour vérifier, alerter et intervenir.</p>
           <p class="role"><span class="hand">mon rôle&nbsp;:</span> chef de projet et développeuse front-end. Je coordonne l'équipe et je développe l'interface.</p>
           <ul class="modules" aria-label="Les quatre parties du projet">
-            <li><strong>Mobile</strong> l'application que les habitants ont dans la poche</li>
+            <li><strong>Mobile</strong> l'application des habitants</li>
             <li><strong>Backend</strong> l'API et la base de données</li>
-            <li><strong>IA</strong> un modèle d'IA intégré à l'application</li>
-            <li><strong>Cartographie</strong> les zones à risque sur une carte</li>
+            <li><strong>IA</strong> un modèle d'IA intégré</li>
+            <li><strong>Cartographie</strong> les zones à risque</li>
           </ul>
-          <div class="phones" aria-hidden="true">
-            <img src="assets/img/projets/fm-carte.jpg" alt="" width="390" height="844" >
-            <img src="assets/img/projets/fm-alertes.jpg" alt="" width="390" height="844" >
-            <img src="assets/img/projets/fm-profil.jpg" alt="" width="390" height="844" >
-          </div>
           <ul class="stack"><li>React Native</li><li>Expo</li><li>NestJS</li><li>Supabase</li><li>Prisma</li><li>Google Maps API</li><li>Figma</li></ul>
           <div class="patch-actions">
             <button type="button" class="see" data-gallery="flowmanage">Voir les 7 écrans</button>
             <a class="patch-link" href="https://github.com/rtuo1978-a11y/Floodge">Voir le code sur GitHub</a>
           </div>
-        </article>
+        </div>
+        <div class="feature-visual phones-fan" aria-hidden="true">
+          <img src="assets/img/projets/fm-alertes.jpg" alt="" width="390" height="844">
+          <img src="assets/img/projets/fm-carte.jpg" alt="" width="390" height="844">
+          <img src="assets/img/projets/fm-profil.jpg" alt="" width="390" height="844">
+        </div>
+      </article>
 
+      <!-- Featured: YALA -->
+      <article class="feature f-yala" id="yala">
+        <div class="feature-visual yala-visual" aria-hidden="true">
+          <div class="yala-card">
+            <p class="yala-word">YALA</p>
+            <p class="yala-sub">l'assistante vocale des femmes</p>
+            <div class="yala-code">
+              <span class="tile t1"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="11"/></svg></span>
+              <span class="tile t2"><svg viewBox="0 0 40 40"><path d="M20 7l13 26H7z"/></svg></span>
+              <span class="tile t3"><svg viewBox="0 0 40 40"><path d="M20 6c6 6 8 10 8 15a8 8 0 0 1-16 0c0-5 2-9 8-15z"/></svg></span>
+            </div>
+            <p class="yala-caption hand">un code secret en 3 images, jamais dit à voix haute</p>
+            <ul class="yala-langs"><li>Français</li><li>Baoulé</li><li>Dioula</li></ul>
+          </div>
+        </div>
+        <div class="feature-text">
+          <p class="patch-meta">Miss CI Informatique 2026 · finaliste</p>
+          <h3>YALA</h3>
+          <p class="feature-lead">Un assistant vocal pour que les femmes, même celles qui ne savent pas lire, gèrent leur argent seules et en sécurité.</p>
+          <p>Tout est parti d'un constat&nbsp;: beaucoup de commerçantes dépendent d'un proche ou d'un agent pour utiliser le mobile money, et perdent confiance. Avec YALA, elles envoient, déposent et retirent de l'argent guidées par la voix, en baoulé ou en dioula, avec un code secret fait de trois images qu'elles touchent au lieu de le dire.</p>
+          <ul class="checks-list">
+            <li>Une enquête de terrain auprès de huit femmes&nbsp;: commerçantes, couturière, agricultrices</li>
+            <li>L'épargne n'est jamais gardée dans l'application&nbsp;: elle part vers le mobile money ou la banque</li>
+            <li>Pour la suite&nbsp;: l'USSD pour les téléphones à touches et un mode pour les personnes non-voyantes</li>
+          </ul>
+          <ul class="stack"><li>React Native</li><li>Django REST</li><li>Voix enregistrée</li><li>Mobile money</li><li>Figma</li></ul>
+          <p class="award">Finaliste Miss CI Informatique 2026</p>
+        </div>
+      </article>
+
+      <!-- Featured: Apotheosis -->
+      <article class="feature f-gold">
+        <div class="feature-text">
+          <p class="patch-meta">Projet personnel · 2026</p>
+          <h3>Apotheosis ACE</h3>
+          <p class="feature-lead">Une application pour organiser le banquet d'une église, du premier invité au dernier plat servi.</p>
+          <p>L'administrateur crée les tables et le menu. Les invités s'inscrivent, choisissent leur table puis leur plat, et peuvent changer d'avis pendant deux minutes. Une page de résultats donne aux cuisiniers les commandes, table par table.</p>
+          <ul class="stack"><li>Django 5.2</li><li>React</li><li>Django REST</li><li>Tailwind CSS</li><li>PythonAnywhere</li></ul>
+          <div class="patch-actions">
+            <button type="button" class="see" data-gallery="ace">Voir les 5 écrans</button>
+            <a class="patch-link" href="https://github.com/rtuo1978-a11y/acevent">Voir le code sur GitHub</a>
+          </div>
+        </div>
+        <div class="feature-visual">
+          <img class="shot" src="assets/img/projets/ace-choix-plat.jpg" alt="Écran de choix du plat d'Apotheosis ACE, avec le compte à rebours de 2 minutes" width="1100" height="693">
+          <img class="shot shot-2" src="assets/img/projets/ace-resultats.jpg" alt="Page des résultats d'Apotheosis ACE, avec les plats commandés table par table" width="1100" height="693">
+        </div>
+      </article>
+
+      <div class="more-head">
+        <h3>Les autres pièces du pagne</h3>
+        <div class="filters" role="group" aria-label="Filtrer les projets">
+          <button type="button" class="filter is-on" data-filter="all" aria-pressed="true">Tout</button>
+          <button type="button" class="filter" data-filter="mobile" aria-pressed="false">Mobile</button>
+          <button type="button" class="filter" data-filter="web" aria-pressed="false">Web</button>
+          <button type="button" class="filter" data-filter="equipe" aria-pressed="false">En équipe</button>
+          <button type="button" class="filter" data-filter="prix" aria-pressed="false">Primés</button>
+        </div>
+      </div>
+
+      <div class="quilt" id="quilt">
         <article class="patch p-yellow" data-tags="web prix">
           <p class="patch-meta">Projet freelance · 2026</p>
           <h3>N'Zassa</h3>
-          <p>Une plateforme d'apprentissage et de conservation de la culture ivoirienne.</p>
+          <p>Une plateforme d'apprentissage et de conservation de la culture ivoirienne. Comme le pagne qui lui donne son nom, elle rassemble des morceaux de notre patrimoine pour les transmettre.</p>
           <p class="award">Prix Technovore, Hackathon ESATIC 2026</p>
-          <div class="patch-actions">
-            <a class="patch-link" href="https://www.figma.com/make/BUqF3tiDwNeOw56paAaRV4/Cultural-Connection-Website">Voir le prototype Figma</a>
-            <a class="patch-link" href="https://github.com/rtuo1978-a11y/N-zassa">Sur GitHub</a>
-          </div>
+          <a class="patch-link" href="https://www.figma.com/make/BUqF3tiDwNeOw56paAaRV4/Cultural-Connection-Website">Voir le prototype Figma</a>
         </article>
 
         <article class="patch p-grey" data-tags="mobile prix">
           <p class="patch-meta">2021 · lycéenne</p>
           <h3>X-Market</h3>
-          <p>Une application de suivi de l'urbanisation pour mieux organiser l'installation des commerces au bord des routes&nbsp;: moins d'accidents, moins de conflits entre vendeurs et autorités.</p>
+          <p>Une application de suivi de l'urbanisation pour mieux organiser l'installation des commerces au bord des routes&nbsp;: moins d'accidents, moins de disputes entre voisins, moins de conflits entre vendeurs et autorités.</p>
           <p class="award">Coup de cœur du jury, Les Margaret Africa Junior 2021</p>
-          <a class="patch-link" href="https://github.com/rtuo1978-a11y/XMarket">Lire l'histoire du projet</a>
-        </article>
-
-        <article class="patch p-night" data-tags="web">
-          <p class="patch-meta">Projet personnel</p>
-          <h3>Gestion de restaurant</h3>
-          <p>Un SaaS pour gérer un restaurant, mené de la base de données jusqu'à la mise en ligne.</p>
-          <ul class="stack"><li>Python</li><li>Django</li><li>PythonAnywhere</li></ul>
-          <a class="patch-link" href="https://github.com/rtuo1978-a11y/Gestion_Restaurant">Sur GitHub</a>
-        </article>
-
-        <article class="patch p-rose-soft" data-tags="web equipe">
-          <p class="patch-meta">Projet Agile des Logiciels · ESATIC · 2026</p>
-          <h3>Système d'information d'usine</h3>
-          <p>Une application web de gestion d'usine, développée en binôme en sprints Scrum suivis sur YouTrack.</p>
-          <ul class="stack"><li>Django</li><li>Scrum</li><li>YouTrack</li></ul>
-          <a class="patch-link" href="https://github.com/rtuo1978-a11y/Syst-meUsine">Sur GitHub</a>
         </article>
 
         <article class="patch p-dots" data-tags="web equipe">
@@ -152,37 +189,47 @@
           <ul class="stack"><li>React</li><li>Next.js</li><li>UX/UI</li></ul>
         </article>
 
-        <article class="patch p-gold p-split" data-tags="web">
-          <div class="split-text">
-            <p class="patch-meta">Projet personnel · 2026</p>
-            <h3>Apotheosis ACE</h3>
-            <p>Une application pour organiser le banquet d'une église&nbsp;: l'administrateur crée les tables et le menu, les invités s'inscrivent et choisissent leur plat, modifiable pendant 2 minutes.</p>
-            <ul class="stack"><li>Django 5.2</li><li>React</li><li>Django REST</li><li>Tailwind CSS</li><li>PythonAnywhere</li></ul>
-            <div class="patch-actions">
-              <button type="button" class="see" data-gallery="ace">Voir les 5 écrans</button>
-              <a class="patch-link" href="https://github.com/rtuo1978-a11y/acevent">Voir le code sur GitHub</a>
-            </div>
-          </div>
-          <img class="shot" src="assets/img/projets/ace-choix-plat.jpg" alt="Écran de choix du plat d'Apotheosis ACE, avec le compte à rebours de 2 minutes" width="1100" height="693" >
-        </article>
-
         <article class="patch p-smart" data-tags="web">
           <p class="patch-meta">Projet de conception · pour la CIE</p>
           <h3>SmartMetter</h3>
           <p>Un système intelligent de gestion des compteurs électriques&nbsp;: le client paie sa facture en ligne, l'IA valide le paiement et un capteur IoT rétablit le courant à distance, sans déplacement d'agent.</p>
-          <img class="schema" src="assets/img/projets/smartmetter-schema.svg" alt="Schéma : le client paie sur la plateforme web, l'IA valide le paiement, le serveur envoie l'ordre au capteur IoT du compteur qui rétablit le courant ; la CIE supervise depuis son interface." width="960" height="400" >
+          <img class="schema" src="assets/img/projets/smartmetter-schema.svg" alt="Schéma : le client paie sur la plateforme web, l'IA valide le paiement, le serveur envoie l'ordre au capteur IoT du compteur qui rétablit le courant ; la CIE supervise depuis son interface." width="960" height="400">
           <ul class="stack"><li>React</li><li>Node.js</li><li>IoT</li><li>MQTT</li><li>IA</li></ul>
-          <a class="patch-link" href="https://github.com/rtuo1978-a11y/Smartmetter">Lire la fiche projet</a>
         </article>
 
-        <article class="patch p-checks" data-tags="web">
+        <article class="patch p-night" data-tags="web">
+          <p class="patch-meta">Projet personnel</p>
+          <h3>Gestion de restaurant</h3>
+          <p>Un SaaS pour gérer un restaurant, que j'ai mené seule de la base de données jusqu'à la mise en ligne.</p>
+          <ul class="stack"><li>Python</li><li>Django</li><li>PythonAnywhere</li></ul>
+        </article>
+
+        <article class="patch p-rose-soft" data-tags="web equipe">
+          <p class="patch-meta">Projet Agile des Logiciels · ESATIC · 2026</p>
+          <h3>Système d'information d'usine</h3>
+          <p>Une application web de gestion d'usine, développée en binôme en sprints Scrum suivis sur YouTrack.</p>
+          <ul class="stack"><li>Django</li><li>Scrum</li><li>YouTrack</li></ul>
+        </article>
+
+        <article class="patch p-checks p-w4" data-tags="web">
           <p class="patch-meta">Projet personnel</p>
           <h3>Portfolio Django</h3>
-          <p>Une première version de mon portfolio, avec une base de données et un espace administrateur pour ajouter, modifier ou supprimer mes projets sans toucher au code.</p>
+          <p>Une première version de mon portfolio, avec une base de données et un espace administrateur pour gérer mes projets sans toucher au code.</p>
           <ul class="stack"><li>Django</li><li>SQLite</li><li>Admin Django</li></ul>
         </article>
       </div>
       <p class="empty" id="quilt-empty" hidden>Aucun projet dans cette catégorie pour l'instant.</p>
+    </section>
+
+    <!-- FACON DE TRAVAILLER -->
+    <section class="method" aria-labelledby="method-title">
+      <h2 id="method-title">Comment je travaille</h2>
+      <ol class="method-steps">
+        <li><h3>J'écoute d'abord</h3><p>Pour YALA, j'ai mené une enquête de terrain auprès de huit femmes&nbsp;: commerçantes, couturière, agricultrices. Une bonne application commence par les gens qui vont s'en servir.</p></li>
+        <li><h3>Je dessine</h3><p>Maquettes et prototypes sur Figma, pour tester les idées avant d'écrire la moindre ligne de code.</p></li>
+        <li><h3>Je construis en équipe</h3><p>Sprints Scrum, tâches partagées, dépôt GitHub organisé par module&nbsp;: c'est comme ça que FlowManage avance.</p></li>
+        <li><h3>Je mets en ligne</h3><p>Une application qui reste sur mon ordinateur n'aide personne. Je déploie, sur PythonAnywhere, en APK ou sur le web.</p></li>
+      </ol>
     </section>
 
     <!-- PARCOURS -->
@@ -222,6 +269,13 @@
           <div>
             <h3>Prix Technovore, Hackathon ESATIC</h3>
             <p>Pour N'Zassa, ma plateforme sur la culture ivoirienne.</p>
+          </div>
+        </li>
+        <li>
+          <span class="year">2026</span>
+          <div>
+            <h3>Finaliste Miss CI Informatique</h3>
+            <p>Avec YALA, mon assistant vocal pour que les femmes gèrent leur argent seules.</p>
           </div>
         </li>
         <li class="is-now">
