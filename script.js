@@ -62,12 +62,12 @@
     return "mis à jour en " + d.toLocaleDateString("fr-FR", { month: "long", year: "numeric" });
   }
   if (list && window.fetch) {
-    fetch("https://api.github.com/users/rtuo1978-a11y/repos?sort=pushed&per_page=9")
+    fetch("https://api.github.com/users/rtuo1978-a11y/repos?sort=pushed&per_page=20")
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function (repos) {
-        repos = repos.filter(function (r) { return !r.fork && r.name !== "rtuo1978-a11y" && r.name !== "PortfolioRose"; });
+        repos = repos.filter(function (r) { return !r.fork && !r.archived && r.name !== "rtuo1978-a11y" && r.name !== "PortfolioRose"; });
         if (!repos.length) throw new Error("vide");
-        list.innerHTML = repos.slice(0, 6).map(function (r) {
+        list.innerHTML = repos.slice(0, 9).map(function (r) {
           return '<li><a href="' + esc(r.html_url) + '">' + esc(r.name) + "</a>" +
             "<p>" + esc(r.description || "Un projet en cours, la description arrive bientôt.") + "</p>" +
             '<div class="repo-info">' +
