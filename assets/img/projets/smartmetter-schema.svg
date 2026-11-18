@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" role="img" aria-label="Schéma de SmartMetter : le client paie sur la plateforme web, l'IA valide le paiement, le serveur envoie l'ordre au capteur IoT du compteur, qui rétablit le courant. La CIE supervise depuis son interface.">
+  <style>
+    text{font-family:'Bricolage','Segoe UI',Arial,sans-serif}
+    .t{font-size:17px;font-weight:700}
+    .s{font-size:13px}
+    .lab{font-size:12.5px;font-weight:600}
+    .ar{stroke:#F4A6C6;stroke-width:2.5;fill:none;stroke-dasharray:7 6}
+  </style>
+  <defs>
+    <marker id="m" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#F4A6C6"/></marker>
+  </defs>
+  <rect width="960" height="400" rx="22" fill="#131A3A"/>
+
+  <!-- Client -->
+  <rect x="30" y="70" width="170" height="110" rx="14" fill="#F4A6C6"/>
+  <text x="115" y="112" text-anchor="middle" class="t" fill="#131A3A">Client</text>
+  <text x="115" y="136" text-anchor="middle" class="s" fill="#131A3A">paie sa facture</text>
+  <text x="115" y="154" text-anchor="middle" class="s" fill="#131A3A">dans son espace</text>
+
+  <!-- Plateforme -->
+  <rect x="265" y="70" width="190" height="110" rx="14" fill="#1B2450" stroke="#F4A6C6" stroke-width="2"/>
+  <text x="360" y="112" text-anchor="middle" class="t" fill="#fff">Plateforme web</text>
+  <text x="360" y="136" text-anchor="middle" class="s" fill="#C7CAD6">React · Node.js</text>
+  <text x="360" y="154" text-anchor="middle" class="s" fill="#C7CAD6">espace client sécurisé</text>
+
+  <!-- Serveur + IA -->
+  <rect x="520" y="70" width="190" height="110" rx="14" fill="#F6C945"/>
+  <text x="615" y="112" text-anchor="middle" class="t" fill="#131A3A">Serveur cloud + IA</text>
+  <text x="615" y="136" text-anchor="middle" class="s" fill="#131A3A">valide le paiement</text>
+  <text x="615" y="154" text-anchor="middle" class="s" fill="#131A3A">détecte la fraude</text>
+
+  <!-- Compteur -->
+  <rect x="775" y="70" width="160" height="110" rx="14" fill="#C7CAD6"/>
+  <text x="855" y="112" text-anchor="middle" class="t" fill="#131A3A">Compteur</text>
+  <text x="855" y="136" text-anchor="middle" class="s" fill="#131A3A">capteur IoT :</text>
+  <text x="855" y="154" text-anchor="middle" class="s" fill="#131A3A">courant rétabli</text>
+
+  <path class="ar" d="M204 125H259" marker-end="url(#m)"/>
+  <path class="ar" d="M459 125H514" marker-end="url(#m)"/>
+  <path class="ar" d="M714 125H769" marker-end="url(#m)"/>
+  <text x="742" y="112" text-anchor="middle" class="lab" fill="#F4A6C6">MQTT</text>
+
+  <!-- CIE admin -->
+  <rect x="450" y="262" width="330" height="96" rx="14" fill="#0D1330" stroke="#F6C945" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="615" y="300" text-anchor="middle" class="t" fill="#F6C945">Interface d'administration CIE</text>
+  <text x="615" y="326" text-anchor="middle" class="s" fill="#C7CAD6">état des compteurs, alertes d'anomalie,</text>
+  <text x="615" y="344" text-anchor="middle" class="s" fill="#C7CAD6">historique et statistiques</text>
+  <path class="ar" d="M615 184V256" marker-end="url(#m)"/>
+
+  <text x="30" y="300" class="s" fill="#C7CAD6">Sans intervention d'un agent :</text>
+  <text x="30" y="322" class="t" fill="#fff">payer → valider → rétablir</text>
+</svg>

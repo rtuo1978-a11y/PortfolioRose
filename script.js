@@ -80,6 +80,60 @@
       });
   }
 
+
+  // Screens gallery
+  var galleries = {
+    flowmanage: { title: "FlowManage", items: [
+      ["fm-bienvenue.jpg", "Bienvenue : la carte des risques près de chez soi"],
+      ["fm-connexion.jpg", "Connexion"],
+      ["fm-carte.jpg", "Carte des zones à risque, alerte en cours et bouton SOS"],
+      ["fm-alertes.jpg", "Alertes triées par niveau, avec lecture vocale"],
+      ["fm-conseils.jpg", "Conseils avant, pendant et après, et conseils de l'IA"],
+      ["fm-profil.jpg", "Profil : points, badges et meilleur citoyen du mois"],
+      ["fm-sos.jpg", "Alerte secours : maintenir le bouton pour envoyer sa position"]
+    ]},
+    ace: { title: "Apotheosis ACE", items: [
+      ["ace-accueil.jpg", "Accueil du banquet"],
+      ["ace-inscription.jpg", "Inscription d'un invité et choix de la table"],
+      ["ace-choix-plat.jpg", "Choix du plat, modifiable pendant 2 minutes"],
+      ["ace-tableau-de-bord.jpg", "Tableau de bord de l'administrateur"],
+      ["ace-resultats.jpg", "Résultats : les plats commandés, table par table"]
+    ]}
+  };
+  var dlg = document.getElementById("gallery");
+  var gImg = document.getElementById("gallery-img");
+  var gCap = document.getElementById("gallery-cap");
+  var gCount = document.getElementById("gallery-count");
+  var gTitle = document.getElementById("gallery-title");
+  var current = null, idx = 0;
+  function show() {
+    var it = current.items[idx];
+    gImg.src = "assets/img/projets/" + it[0];
+    gImg.alt = current.title + " : " + it[1];
+    gCap.textContent = it[1];
+    gCount.textContent = (idx + 1) + " / " + current.items.length;
+  }
+  function step(d) { idx = (idx + d + current.items.length) % current.items.length; show(); }
+  if (dlg && dlg.showModal) {
+    document.querySelectorAll("[data-gallery]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        current = galleries[btn.getAttribute("data-gallery")]; idx = 0;
+        gTitle.textContent = "Écrans de " + current.title;
+        show(); dlg.showModal();
+      });
+    });
+    document.getElementById("gallery-close").addEventListener("click", function () { dlg.close(); });
+    document.getElementById("gallery-prev").addEventListener("click", function () { step(-1); });
+    document.getElementById("gallery-next").addEventListener("click", function () { step(1); });
+    dlg.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowRight") step(1);
+      if (e.key === "ArrowLeft") step(-1);
+    });
+    dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+  } else {
+    document.querySelectorAll("[data-gallery]").forEach(function (b) { b.hidden = true; });
+  }
+
   var y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();
 })();

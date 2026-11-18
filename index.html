@@ -98,8 +98,16 @@
             <li><strong>IA</strong> un modèle d'IA intégré à l'application</li>
             <li><strong>Cartographie</strong> les zones à risque sur une carte</li>
           </ul>
+          <div class="phones" aria-hidden="true">
+            <img src="assets/img/projets/fm-carte.jpg" alt="" width="390" height="844" >
+            <img src="assets/img/projets/fm-alertes.jpg" alt="" width="390" height="844" >
+            <img src="assets/img/projets/fm-profil.jpg" alt="" width="390" height="844" >
+          </div>
           <ul class="stack"><li>React Native</li><li>Expo</li><li>NestJS</li><li>Supabase</li><li>Prisma</li><li>Google Maps API</li><li>Figma</li></ul>
-          <a class="patch-link" href="https://github.com/rtuo1978-a11y/Floodge">Voir le code sur GitHub</a>
+          <div class="patch-actions">
+            <button type="button" class="see" data-gallery="flowmanage">Voir les 7 écrans</button>
+            <a class="patch-link" href="https://github.com/rtuo1978-a11y/Floodge">Voir le code sur GitHub</a>
+          </div>
         </article>
 
         <article class="patch p-yellow" data-tags="web prix">
@@ -138,15 +146,29 @@
           <ul class="stack"><li>React</li><li>Next.js</li><li>UX/UI</li></ul>
         </article>
 
-        <article class="patch p-gold p-wide" data-tags="web">
-          <p class="patch-meta">Projet personnel · 2026</p>
-          <h3>Apotheosis ACE</h3>
-          <p>Une application pour organiser le banquet d'une église&nbsp;: l'administrateur crée les tables et le menu, les invités s'inscrivent et choisissent leur plat, modifiable pendant 2 minutes.</p>
-          <ul class="stack"><li>Django 5.2</li><li>React</li><li>Django REST</li><li>Tailwind CSS</li><li>PythonAnywhere</li></ul>
-          <a class="patch-link" href="https://github.com/rtuo1978-a11y/acevent">Voir le code sur GitHub</a>
+        <article class="patch p-gold p-split" data-tags="web">
+          <div class="split-text">
+            <p class="patch-meta">Projet personnel · 2026</p>
+            <h3>Apotheosis ACE</h3>
+            <p>Une application pour organiser le banquet d'une église&nbsp;: l'administrateur crée les tables et le menu, les invités s'inscrivent et choisissent leur plat, modifiable pendant 2 minutes.</p>
+            <ul class="stack"><li>Django 5.2</li><li>React</li><li>Django REST</li><li>Tailwind CSS</li><li>PythonAnywhere</li></ul>
+            <div class="patch-actions">
+              <button type="button" class="see" data-gallery="ace">Voir les 5 écrans</button>
+              <a class="patch-link" href="https://github.com/rtuo1978-a11y/acevent">Voir le code sur GitHub</a>
+            </div>
+          </div>
+          <img class="shot" src="assets/img/projets/ace-choix-plat.jpg" alt="Écran de choix du plat d'Apotheosis ACE, avec le compte à rebours de 2 minutes" width="1100" height="693" >
         </article>
 
-        <article class="patch p-checks p-wide" data-tags="web">
+        <article class="patch p-smart" data-tags="web">
+          <p class="patch-meta">Projet de conception · pour la CIE</p>
+          <h3>SmartMetter</h3>
+          <p>Un système intelligent de gestion des compteurs électriques&nbsp;: le client paie sa facture en ligne, l'IA valide le paiement et un capteur IoT rétablit le courant à distance, sans déplacement d'agent.</p>
+          <img class="schema" src="assets/img/projets/smartmetter-schema.svg" alt="Schéma : le client paie sur la plateforme web, l'IA valide le paiement, le serveur envoie l'ordre au capteur IoT du compteur qui rétablit le courant ; la CIE supervise depuis son interface." width="960" height="400" >
+          <ul class="stack"><li>React</li><li>Node.js</li><li>IoT</li><li>MQTT</li><li>IA</li></ul>
+        </article>
+
+        <article class="patch p-checks" data-tags="web">
           <p class="patch-meta">Projet personnel</p>
           <h3>Portfolio Django</h3>
           <p>Une première version de mon portfolio, avec une base de données et un espace administrateur pour ajouter, modifier ou supprimer mes projets sans toucher au code.</p>
@@ -276,6 +298,23 @@
       </div>
     </section>
   </main>
+
+  <dialog class="gallery" id="gallery" aria-labelledby="gallery-title">
+    <div class="gallery-head">
+      <h2 id="gallery-title">Écrans</h2>
+      <button type="button" class="gallery-close" id="gallery-close">Fermer</button>
+    </div>
+    <figure class="gallery-stage">
+      <img id="gallery-img" src="" alt="">
+      <figcaption id="gallery-cap"></figcaption>
+    </figure>
+    <div class="gallery-nav">
+      <button type="button" id="gallery-prev">Précédent</button>
+      <span id="gallery-count" aria-live="polite"></span>
+      <button type="button" id="gallery-next">Suivant</button>
+    </div>
+    <p class="gallery-note">Captures réelles de l'application, avec des données de démonstration.</p>
+  </dialog>
 
   <footer class="foot">
     <p>Goyéli Rose Tuo, Abidjan, <span id="year">2026</span>. Fait main, avec du HTML, du CSS et beaucoup de rose.</p>
