@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Goyéli Rose Tuo — Développeuse d'applications web &amp; mobile</title>
+  <meta name="description" content="Portfolio de Goyéli Rose Tuo, développeuse d'applications web et mobiles à Abidjan, étudiante en Licence 3 à l'ESATIC.">
+  <meta property="og:title" content="Goyéli Rose Tuo — Développeuse d'applications">
+  <meta property="og:description" content="Des applications web et mobiles qui rendent la vie plus simple, pensées à partir des réalités d'ici.">
+  <meta property="og:image" content="assets/img/goyeli-rose.jpg">
+  <meta name="theme-color" content="#131A3A">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/bricolage-grotesque-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#projets">Aller aux projets</a>
+
+  <header class="nav">
+    <a class="nav-name" href="#top">Goyéli Rose</a>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#outils">Compétences</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a class="nav-cta" href="#contact">Me contacter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hello">Bonjour, je suis</p>
+        <h1>Goyéli Rose Tuo</h1>
+        <p class="lead">Je développe des applications web et mobiles qui rendent la vie plus simple, en partant des réalités d'ici, à Abidjan.</p>
+        <p class="now" aria-live="polite">
+          <span class="now-dot" aria-hidden="true"></span>
+          <span>En ce moment, <span class="now-text" id="now-text">je coordonne FlowManage, une application contre les inondations.</span></span>
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-rose" href="#projets">Voir mes projets</a>
+          <a class="btn btn-line" href="assets/docs/CV_Tuo_Goyeli_Rose.pdf" download>Télécharger mon CV</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <div class="patch-frame">
+          <img src="assets/img/goyeli-rose.jpg" width="560" height="560" alt="Portrait de Goyéli Rose Tuo, souriante, en veste bleu marine">
+          <svg class="stitch" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><rect x="3" y="3" width="94" height="94" rx="6" ry="6" pathLength="100"/></svg>
+        </div>
+        <figcaption class="hand">c'est moi&nbsp;!</figcaption>
+        <svg class="star" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 2l4.6 12.4L38 15.5l-10.5 8.2L31.2 37 20 29.6 8.8 37l3.7-13.3L2 15.5l13.4-1.1z"/></svg>
+      </figure>
+    </section>
+
+    <!-- A PROPOS -->
+    <section class="about" aria-labelledby="about-title">
+      <div class="about-inner">
+        <h2 id="about-title">Ce qui me fait coder</h2>
+        <div class="about-cols">
+          <p>Étudiante en Licence 3 Technologies du Web et Images Numériques à l'ESATIC, je passe de la maquette Figma à l'application en ligne&nbsp;: interfaces, API, bases de données, déploiement. J'aime travailler en équipe, et j'aime encore plus quand une application résout un vrai problème.</p>
+          <p>Je suis convaincue que la technologie est le meilleur moyen de rendre la vie simple et belle, à condition d'être pensée à partir de nos réalités africaines. C'est pour ça que mes projets parlent d'inondations, de culture ivoirienne, de commerce de rue ou de restaurants du quartier.</p>
+        </div>
+        <ul class="facts">
+          <li><strong>2</strong> prix pour mes projets</li>
+          <li><strong>8 mois</strong> en startup, chez Frony</li>
+          <li><strong>3 ans</strong> déléguée de classe</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="projects" id="projets" aria-labelledby="projets-title">
+      <div class="section-head">
+        <h2 id="projets-title">Mes projets, cousus main</h2>
+        <p class="section-note">Comme un pagne n'zassa, chaque pièce vient d'une histoire différente. Ensemble, elles racontent ce que je sais faire.</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filtrer les projets">
+        <button type="button" class="filter is-on" data-filter="all" aria-pressed="true">Tout</button>
+        <button type="button" class="filter" data-filter="mobile" aria-pressed="false">Mobile</button>
+        <button type="button" class="filter" data-filter="web" aria-pressed="false">Web</button>
+        <button type="button" class="filter" data-filter="equipe" aria-pressed="false">En équipe</button>
+        <button type="button" class="filter" data-filter="prix" aria-pressed="false">Primés</button>
+      </div>
+
+      <div class="quilt" id="quilt">
+        <article class="patch p-big p-rose" data-tags="mobile equipe">
+          <p class="patch-meta">Projet d'équipe APP3 · ESATIC · 2026</p>
+          <h3>FlowManage</h3>
+          <p>Une application mobile pour prévenir et gérer les risques d'inondation en Côte d'Ivoire&nbsp;: alertes, cartographie des zones à risque et aide à la décision.</p>
+          <p class="role"><span class="hand">mon rôle&nbsp;:</span> chef de projet et développeuse front-end. Je coordonne l'équipe et je développe l'interface.</p>
+          <ul class="modules" aria-label="Les quatre parties du projet">
+            <li><strong>Mobile</strong> l'application que les habitants ont dans la poche</li>
+            <li><strong>Backend</strong> l'API et la base de données</li>
+            <li><strong>IA</strong> un modèle d'IA intégré à l'application</li>
+            <li><strong>Cartographie</strong> les zones à risque sur une carte</li>
+          </ul>
+          <ul class="stack"><li>React Native</li><li>Expo</li><li>NestJS</li><li>Supabase</li><li>Prisma</li><li>Google Maps API</li><li>Figma</li></ul>
+          <a class="patch-link" href="https://github.com/rtuo1978-a11y/Floodge">Voir le code sur GitHub</a>
+        </article>
+
+        <article class="patch p-yellow" data-tags="web prix">
+          <p class="patch-meta">Projet freelance · 2026</p>
+          <h3>N'Zassa</h3>
+          <p>Une plateforme d'apprentissage et de conservation de la culture ivoirienne.</p>
+          <p class="award">Prix Technovore, Hackathon ESATIC 2026</p>
+          <a class="patch-link" href="https://www.figma.com/make/BUqF3tiDwNeOw56paAaRV4/Cultural-Connection-Website">Voir le prototype Figma</a>
+        </article>
+
+        <article class="patch p-grey" data-tags="mobile prix">
+          <p class="patch-meta">2021 · lycéenne</p>
+          <h3>X-Market</h3>
+          <p>Une application de suivi de l'urbanisation pour mieux organiser l'installation des commerces au bord des routes&nbsp;: moins d'accidents, moins de conflits entre vendeurs et autorités.</p>
+          <p class="award">Coup de cœur du jury, Les Margaret Africa Junior 2021</p>
+        </article>
+
+        <article class="patch p-night" data-tags="web">
+          <p class="patch-meta">Projet personnel</p>
+          <h3>Gestion de restaurant</h3>
+          <p>Un SaaS pour gérer un restaurant, mené de la base de données jusqu'à la mise en ligne.</p>
+          <ul class="stack"><li>Python</li><li>Django</li><li>PythonAnywhere</li></ul>
+        </article>
+
+        <article class="patch p-rose-soft" data-tags="web equipe">
+          <p class="patch-meta">Projet Agile des Logiciels · ESATIC · 2026</p>
+          <h3>Système d'information d'usine</h3>
+          <p>Une application web de gestion d'usine, développée en binôme en sprints Scrum suivis sur YouTrack.</p>
+          <ul class="stack"><li>Django</li><li>Scrum</li><li>YouTrack</li></ul>
+        </article>
+
+        <article class="patch p-dots" data-tags="web equipe">
+          <p class="patch-meta">Startup Frony · mars à octobre 2026</p>
+          <h3>Développeuse front-end</h3>
+          <p>Des applications web responsives pour mobile, tablette et ordinateur, des interfaces pensées UX/UI, des bases de données et des tests de performance.</p>
+          <ul class="stack"><li>React</li><li>Next.js</li><li>UX/UI</li></ul>
+        </article>
+
+        <article class="patch p-checks p-wide" data-tags="web">
+          <p class="patch-meta">Projet personnel</p>
+          <h3>Portfolio Django</h3>
+          <p>Une première version de mon portfolio, avec une base de données et un espace administrateur pour ajouter, modifier ou supprimer mes projets sans toucher au code.</p>
+          <ul class="stack"><li>Django</li><li>SQLite</li><li>Admin Django</li></ul>
+        </article>
+      </div>
+      <p class="empty" id="quilt-empty" hidden>Aucun projet dans cette catégorie pour l'instant.</p>
+    </section>
+
+    <!-- PARCOURS -->
+    <section class="journey" id="parcours" aria-labelledby="parcours-title">
+      <h2 id="parcours-title">Mon parcours</h2>
+      <ol class="timeline">
+        <li>
+          <span class="year">2021</span>
+          <div>
+            <h3>Coup de cœur du jury, Les Margaret Africa Junior</h3>
+            <p>À 15 ans, avec X-Market. Les prix Les Margaret de la JFD récompensent les femmes et les jeunes filles qui innovent dans la tech.</p>
+          </div>
+        </li>
+        <li>
+          <span class="year">2024</span>
+          <div>
+            <h3>Baccalauréat série D</h3>
+            <p>Lycée Moderne 2 Abobo.</p>
+          </div>
+        </li>
+        <li>
+          <span class="year">2024</span>
+          <div>
+            <h3>Entrée à l'ESATIC</h3>
+            <p>Licence Technologies du Web et Images Numériques. Présidente de promotion en Licence 1, puis membre du Conseil estudiantin.</p>
+          </div>
+        </li>
+        <li>
+          <span class="year">2026</span>
+          <div>
+            <h3>Développeuse front-end chez Frony</h3>
+            <p>De mars à octobre, ma première expérience en startup.</p>
+          </div>
+        </li>
+        <li>
+          <span class="year">2026</span>
+          <div>
+            <h3>Prix Technovore, Hackathon ESATIC</h3>
+            <p>Pour N'Zassa, ma plateforme sur la culture ivoirienne.</p>
+          </div>
+        </li>
+        <li class="is-now">
+          <span class="year">Aujourd'hui</span>
+          <div>
+            <h3>Licence 3 et FlowManage</h3>
+            <p>Je termine ma Licence, je coordonne FlowManage et je cherche un stage de fin de cycle de 3 à 6 mois.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- COMPETENCES -->
+    <section class="tools" id="outils" aria-labelledby="outils-title">
+      <h2 id="outils-title">Ma boîte à outils</h2>
+      <div class="tool-grid">
+        <div>
+          <h3>Langages</h3>
+          <ul><li>Python</li><li>JavaScript</li><li>Java / J2EE</li><li>Dart</li><li>C++</li><li>SQL</li><li>HTML5 / CSS3</li></ul>
+        </div>
+        <div>
+          <h3>Web et mobile</h3>
+          <ul><li>Django</li><li>React, Next.js</li><li>Angular</li><li>Node.js, NestJS, Express</li><li>Flutter</li><li>React Native, Ionic</li></ul>
+        </div>
+        <div>
+          <h3>Données et cloud</h3>
+          <ul><li>API REST</li><li>Supabase, Prisma</li><li>Firebase</li><li>AWS</li><li>PythonAnywhere</li><li>Git et GitHub</li></ul>
+        </div>
+        <div>
+          <h3>Design et méthode</h3>
+          <ul><li>UI/UX sur Figma</li><li>SEO et Analytics</li><li>IA générative (LLM)</li><li>Scrum, cycle en V</li><li>Tests de conformité</li></ul>
+        </div>
+      </div>
+
+      <div class="two-lists">
+        <div>
+          <h3>Certifications</h3>
+          <ul>
+            <li>Introduction to Modern AI, Cisco Networking Academy</li>
+            <li>HTML Essentials, Cisco et JS Institute</li>
+            <li>English for IT 2, Cisco et OpenEDG</li>
+            <li>CCNA 1, Africa DigiEmpower by CYBASTION</li>
+            <li>FlutterFire Summer Camp</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Engagements</h3>
+          <ul>
+            <li>Présidente de promotion en Licence 1, ESATIC</li>
+            <li>Membre du Conseil estudiantin de l'ESATIC</li>
+            <li>Déléguée de classe trois années de suite</li>
+          </ul>
+          <h3 class="mt">Langues</h3>
+          <ul>
+            <li>Français, langue maternelle</li>
+            <li>Anglais, intermédiaire avancé (B2)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- GITHUB -->
+    <section class="gh" id="github" aria-labelledby="github-title">
+      <div class="section-head">
+        <h2 id="github-title">Sur mon GitHub en ce moment</h2>
+        <p class="section-note">Cette liste se met à jour toute seule depuis GitHub.</p>
+      </div>
+      <ul class="repos" id="repos">
+        <li class="repo-loading">Chargement de mes dépôts…</li>
+      </ul>
+      <a class="btn btn-line" href="https://github.com/rtuo1978-a11y">Voir tout sur GitHub</a>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">On travaille ensemble&nbsp;?</h2>
+      <p>Je cherche un stage de fin de cycle de 3 à 6 mois à Abidjan, en développement d'applications web ou mobiles. Écrivez-moi, je réponds vite.</p>
+      <div class="hero-actions">
+        <a class="btn btn-yellow" href="mailto:rtuo1978@gmail.com">rtuo1978@gmail.com</a>
+        <a class="btn btn-line" href="https://github.com/rtuo1978-a11y">github.com/rtuo1978-a11y</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Goyéli Rose Tuo, Abidjan, <span id="year">2026</span>. Fait main, avec du HTML, du CSS et beaucoup de rose.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
